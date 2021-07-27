@@ -31,7 +31,6 @@ export default function Home() {
         chatbotElement.removeEventListener("chatCompleted", handleChatComplete);
       };
     }
-
   }, []);
 
   const [isChatVisible, setIsChatVisible] = useState(false);
