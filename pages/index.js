@@ -3,22 +3,89 @@ import Link from 'next/link'
 import Router from 'next/router'
 import React, { useState } from 'react';
 import MyLayout from '../components/layout'
-import { Table, PageHeader, Input, Button, Space, Tag, Modal, Select, Switch, Tooltip } from 'antd';
+import { Row, Col, PageHeader, Button, Select, Image } from 'antd';
 import 'antd/dist/antd.css';
-import Highlighter from 'react-highlight-words';
-import { SearchOutlined, RightOutlined, PlusOutlined, ThunderboltOutlined, CloseOutlined, CheckOutlined} from '@ant-design/icons';
-const { Option } = Select;
 
+const { Option } = Select;
 
 export default function Home() {
 
-
   return (
     <>
-     <PageHeader
-    className="site-page-header"
-    title="Join a room you are interested in:"
-    />
+     <PageHeader className="site-page-header"/>
+
+    <Row>
+        <Col span={12}>
+          <Row>
+            <h1 style={{fontSize:"2.3rem",fontWeight: "normal", 
+                        width:"400px",textAlign:"center",
+                        marginLeft:"100px"}}>
+              Your Wellness with a Simple Touch
+              </h1>
+          </Row>
+
+          <Row>
+          <p style={{
+                    width:"400px",textAlign:"center", marginLeft:"100px",backgroundColor:"#A1D6AD",
+                    padding:"20px"
+          }}>
+            EasyHealth aims to connect more patients with qualified doctors for online consultations.
+            You may have a preliminary check with our AI chatbot assistant to get an instant diagnosis.</p>
+          </Row>
+
+          <Row style={{marginTop:"80px", textAlign:"center", marginLeft:"40px"}}>
+            <ul style={{listStyle: "none"}}>
+            <li>
+              <Row>
+                <Col span={12}>
+                  <img src="/AIChatBot.png" 
+                  style={{width:"120px",height:"120px", borderRadius: "50%",
+                  boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}/>
+                  </Col>
+
+                <Col span={12}>
+                  <Button shape="round" size="large"
+                  style={{ boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                          marginLeft:"10px",marginTop:"30px", width:"260px",height:"50px", borderColor:"#7dc98f",
+                          backgroundColor:"#7dc98f",color:"white", fontSize:"20px", letterSpacing:"1px"}}>
+                    AI Chatbot Assistant 
+                  </Button>
+                </Col>
+              </Row>
+            </li>
+            <br/>
+            <li>
+              <Row>
+                <Col span={12}>
+                  <img src="/doctorCartoon.jpeg" 
+                   style={{width:"120px",height:"120px", borderRadius: "50%",
+                   boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}/>
+                </Col>
+                <Col span={12}>
+                  <Button  type="primary" shape="round" size="large"
+                  style={{ boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                           marginLeft:"10px",marginTop:"30px", width:"260px",height:"50px",
+                           fontSize:"20px",letterSpacing:"1px"}}>
+                  Find Your Doctors
+                  </Button>
+                  </Col>
+              </Row>          
+            </li>
+          </ul>
+          </Row>
+        </Col>
+
+        <Col span={12} style={{marginTop:"20px"}} >
+          <Row>
+            <Col span={24}>
+              <Image width={620} src="/doctor1.jpeg" />
+            </Col>
+            <Col span={24}>
+              <Image width={620} src="/doctor2.jpeg" />
+            </Col>
+          </Row>  
+        </Col>
+      </Row>
 
     </>
     )
