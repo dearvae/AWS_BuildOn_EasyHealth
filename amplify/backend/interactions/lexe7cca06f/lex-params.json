@@ -1,0 +1,65 @@
+{
+    "resourceName": "lexe7cca06f",
+    "botName": "easyhealth",
+    "intents": [
+        {
+            "cancelMessage": "your consultation will not be booked",
+            "confirmationQuestion": "are you sure you want to book a consultation for doctor specialised in {part}",
+            "slots": [
+                {
+                    "name": "part",
+                    "type": "part",
+                    "prompt": "which part of the body do you feel uncomfortable?",
+                    "required": true,
+                    "customType": true
+                },
+                {
+                    "name": "symptpm",
+                    "type": "s",
+                    "prompt": "ss",
+                    "required": false,
+                    "customType": true
+                },
+                {
+                    "name": "symptom",
+                    "type": "symptom",
+                    "prompt": "can you describe your symptom?",
+                    "required": true,
+                    "customType": true
+                }
+            ],
+            "utterances": [
+                "book consultation"
+            ],
+            "intentName": "bookconsultation",
+            "newSlotTypes": [
+                {
+                    "slotType": "part",
+                    "slotTypeDescription": "body part",
+                    "slotValues": [
+                        "head",
+                        "skin"
+                    ]
+                },
+                {
+                    "slotType": "s",
+                    "slotTypeDescription": "s",
+                    "slotValues": [
+                        "s"
+                    ]
+                },
+                {
+                    "slotType": "symptom",
+                    "slotTypeDescription": "symptom",
+                    "slotValues": [
+                        "ichy",
+                        "pain"
+                    ]
+                }
+            ]
+        }
+    ],
+    "outputVoice": false,
+    "sessionTimeout": "5",
+    "coppa": false
+}
