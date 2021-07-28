@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Router from 'next/router'
 import DailyIframe from '@daily-co/daily-js';
-import MyLayout from '../components/doctor_layout'
+import MyLayout from '../../components/doctor_layout'
 import React,{useState} from 'react';
 import { Row, Col, Tag, Modal, Radio, Avatar, Button} from 'antd';
 import { UserAddOutlined,  StarOutlined } from '@ant-design/icons';
