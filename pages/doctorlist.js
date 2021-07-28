@@ -84,9 +84,11 @@ export default function DoctorList() {
 
                         <Row>
                             <div style={{textAlign:"center",width:"300px", height:"40px", margin:"auto auto", paddingTop:"10px"}}>
+                              <Link href="/room">
                                 <Button type="primary" shape="round" size="medium"
                                 style={{width:"300px", height:"40px", fontSize:"18px"}}
                                 >Start a Call Now</Button>
+                                </Link>
                             </div>
                         </Row>
                     </Col>

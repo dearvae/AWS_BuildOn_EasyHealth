@@ -95,12 +95,14 @@ export default function Home() {
                    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}/>
                 </Col>
                 <Col span={12}>
+                  <Link href="/doctorlist">
                   <Button  type="primary" shape="round" size="large"
                   style={{ boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                            marginLeft:"10px",marginTop:"30px", width:"260px",height:"50px",
                            fontSize:"20px",letterSpacing:"1px"}}>
                   Find Your Doctors
                   </Button>
+                  </Link>
                   </Col>
               </Row>          
             </li>
