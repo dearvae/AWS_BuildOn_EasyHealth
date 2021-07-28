@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Router from 'next/router'
 import React, { useState } from 'react';
 import MyLayout from '../components/layout'
-import { Row, Col, PageHeader, Button, Select, Image, List, Cascader, Form, Input, DatePicker} from 'antd';
+import { Row, Col, notification, Button, Select, Image, List, Cascader, Form, Input, DatePicker} from 'antd';
 import 'antd/dist/antd.css';
 import Avatar from 'antd/lib/avatar/avatar';
 
@@ -197,10 +197,7 @@ export default function Register() {
     return (
         <>
             <div>
-          <div style={{textAlign:"center"}}>
-            <img style={{margin:'1em', height:'120px'}} src="/easyHealthLogo.png" alt="logo"/>
-          </div>
-          <h1 style ={{textAlign:'center',margin:'0.4em', fontSize:"30px"}}>Registration</h1>
+          <h1 style ={{textAlign:'center',margin:'0.2em', fontSize:"30px", marginBottom:"25px"}}>Registration</h1>
 
           <div>
             <Form
@@ -213,10 +210,11 @@ export default function Register() {
                   prefix: '65',
                 }}
                 scrollToFirstError
+                style={{margin:"auto auto"}}
                 >
 
               <Row>
-                <Col span={8} >
+                <Col span={20} >
                   <Form.Item 
                       label="First Name"
                       name="firstname"
@@ -226,7 +224,7 @@ export default function Register() {
                       <Input />
                   </Form.Item>
                 </Col>
-                <Col span={8}>
+                <Col span={20}>
                   <Form.Item 
                         label="Middle Name"
                         name="middlename"
@@ -234,7 +232,7 @@ export default function Register() {
                     <Input />
                     </Form.Item>
                 </Col>
-                <Col span={8}>
+                <Col span={20}>
                   <Form.Item 
                         label="Last Name"
                         name="lastname"
@@ -249,13 +247,13 @@ export default function Register() {
               </Row>
 
                 <Row>
-                  <Col span={8}>
+                  <Col span={20}>
                     <Form.Item label="Birth Date">
                     <DatePicker />
                     </Form.Item>
                   </Col>
 
-                  <Col span={8}>
+                  <Col span={20}>
                   <Form.Item
                       name="phone"
                       label="Phone Number"
@@ -276,7 +274,7 @@ export default function Register() {
 
                   </Col>
 
-                  <Col span={8}>
+                  <Col span={20}>
                   <Form.Item label="Gender">
                     <Select>
                         <Select.Option value="Male">Male</Select.Option>
@@ -289,7 +287,7 @@ export default function Register() {
                 </Row>
 
                 <Row>
-                  <Col span="24" style={{textAlign:"left", marginLight:"100px"}}>
+                  <Col span="20" style={{textAlign:"left", marginLight:"100px"}}>
                       <Form.Item
                       name="residence"
                       label="Habitual Residence"
@@ -307,6 +305,7 @@ export default function Register() {
                   </Col>
                 </Row>
 
+                <Col span="20">
                 <Form.Item 
                     label="Email Address"
                     name="email"
@@ -323,21 +322,25 @@ export default function Register() {
                         >
                 <Input />
                 </Form.Item>
-              
-                <Form.Item
-                    label="Password"
-                    name="password"
-                    rules={[
-                    {
-                        required: true,
-                        message: 'Please input your password!',
-                    },
-                    ]}
-                >
-                    <Input.Password />
-                </Form.Item>
+                </Col>
 
-                  <Form.Item
+                <Col span="20">
+                    <Form.Item
+                        label="Password"
+                        name="password"
+                        rules={[
+                        {
+                            required: true,
+                            message: 'Please input your password!',
+                        },
+                        ]}
+                    >
+                        <Input.Password />
+                    </Form.Item>
+                </Col>
+
+                <Col span="20">
+                <Form.Item
                       label="Confirm Password"
                       name="confirmPassword"
                       rules={[
@@ -349,6 +352,7 @@ export default function Register() {
                   >
                     <Input.Password />
                 </Form.Item>
+                </Col>
 
                 <Form.Item
                     wrapperCol={{
@@ -364,11 +368,26 @@ export default function Register() {
                 >
                     <Button 
                     htmlType="submit" 
-                    style={{margin:'4em '}}
+                    shape="round"
+                    style={{marginTop:"5px", width:"200px", height:"40px",fontSize:"20px", 
+                    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                    borderColor:"#7dc98f",backgroundColor:"#7dc98f",color:"white"}}
                     onClick={() => openNotificationWithIcon('success')}
                     >
                          <Link href="/login">
-                        <a>Sign Up</a>
+                        <a>Submit</a>
+                        </Link>
+                    </Button>
+
+                    <Button 
+                    htmlType="submit" 
+                    shape="round"
+                    style={{marginTop:"20px", width:"200px", height:"40px",fontSize:"20px", 
+                    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                    borderColor:"white",backgroundColor:"white",color:"red"}}
+                    >
+                         <Link href="/">
+                        <a>Cancel</a>
                         </Link>
                     </Button>
             

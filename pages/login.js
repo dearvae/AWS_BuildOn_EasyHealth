@@ -84,7 +84,11 @@ export default function Login() {
                     }}
                 >
 
-                    <Button style={{backgroundColor:"#afd45b",color:"white"}}htmlType="submit">
+                    <Button        
+                    shape="round"
+                    style={{marginTop:"20px", width:"200px", height:"40px",fontSize:"20px", 
+                    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                    borderColor:"#7dc98f",backgroundColor:"#7dc98f",color:"white"}} htmlType="submit">
                          <Link href="/">
                         <a>Login Now</a>
                         </Link>
@@ -93,7 +97,11 @@ export default function Login() {
                     <br></br>
                     <br></br>
 
-                    <Button style={{backgroundColor:"#afd45b",color:"white"}} htmlType="submit">
+                    <Button        
+                    shape="round"
+                    style={{marginTop:"20px", width:"200px", height:"40px",fontSize:"20px", 
+                    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                    borderColor:"#349beb",backgroundColor:"#349beb",color:"white"}} htmlType="submit">
                         <Link href="/register">
                             <a>Sign Up Here</a>
                         </Link> 
