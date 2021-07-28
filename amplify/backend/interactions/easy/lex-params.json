@@ -1,0 +1,56 @@
+{
+    "resourceName": "easy",
+    "botName": "easy",
+    "intents": [
+        {
+            "cancelMessage": "okay, see you",
+            "confirmationQuestion": "do you want to have a consultation with our {part} doctor?",
+            "slots": [
+                {
+                    "name": "part",
+                    "type": "part",
+                    "prompt": "Which part of your body do you find uncomfortable?",
+                    "required": true,
+                    "customType": true
+                },
+                {
+                    "name": "symptom",
+                    "type": "symptom",
+                    "prompt": "can you describe your symptom?",
+                    "required": true,
+                    "customType": true
+                }
+            ],
+            "utterances": [
+                "doctor",
+                "book",
+                "book consultation",
+                "consultation"
+            ],
+            "intentName": "doctor",
+            "newSlotTypes": [
+                {
+                    "slotType": "part",
+                    "slotTypeDescription": "body parts",
+                    "slotValues": [
+                        "skin",
+                        "head",
+                        "stomach"
+                    ]
+                },
+                {
+                    "slotType": "symptom",
+                    "slotTypeDescription": "symptom",
+                    "slotValues": [
+                        "pain",
+                        "itchy",
+                        "dizzy"
+                    ]
+                }
+            ]
+        }
+    ],
+    "outputVoice": false,
+    "sessionTimeout": "5",
+    "coppa": false
+}

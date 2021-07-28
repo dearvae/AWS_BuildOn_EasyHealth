@@ -23,6 +23,10 @@
         "lexe7cca06f": {
           "deploymentBucketName": "amplify-easyhealth-dev-204249-deployment",
           "s3Key": "amplify-builds/lexe7cca06f-636d7446426a2f337650-build.zip"
+        },
+        "easy": {
+          "deploymentBucketName": "amplify-easyhealth-dev-204249-deployment",
+          "s3Key": "amplify-builds/easy-7957737165673143544b-build.zip"
         }
       }
     }

@@ -17,6 +17,11 @@ const awsmobile = {
             "name": "easyhealth_dev",
             "alias": "$LATEST",
             "region": "ap-southeast-1"
+        },
+        {
+            "name": "easy_dev",
+            "alias": "$LATEST",
+            "region": "ap-southeast-1"
         }
     ]
 };

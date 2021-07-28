@@ -126,7 +126,7 @@ export default function Home() {
           right: "0",
           zIndex:"999",
           backgroundColor:"#fff"}}
-          botName="easyhealth_dev"
+          botName="easy_dev"
           botTitle="Easy Health"
           welcomeMessage="Hello, how can I help you?"
           />

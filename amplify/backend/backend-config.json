@@ -16,6 +16,11 @@
       "service": "Lex",
       "providerPlugin": "awscloudformation",
       "build": true
+    },
+    "easy": {
+      "service": "Lex",
+      "providerPlugin": "awscloudformation",
+      "build": true
     }
   }
 }
