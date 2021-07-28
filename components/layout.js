@@ -25,6 +25,7 @@ export default function MyLayout({ number, children }) {
           height: '40px',
           margin: '16px',
           textAlign: 'center'}}>
+          
           <Image src="/easyHealthLogo.png" width={90}></Image>
           {/* <Avatar src="/easyHealthLogo.png" width={200}></Avatar> */}
         </div>
@@ -70,9 +71,9 @@ export default function MyLayout({ number, children }) {
             </Link>
           </Menu.Item>
 
-          <Menu.Item key="7" icon={<LogoutOutlined />} style={{ position: 'absolute', bottom: '200px;'}}>
+          <Menu.Item key="7" icon={<LogoutOutlined />}>
             <Link href="/login">
-              <a>Sign Out</a>
+              <a>Log In</a>
             </Link>
           </Menu.Item>
         </Menu>
