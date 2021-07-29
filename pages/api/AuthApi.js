@@ -1,4 +1,4 @@
-import { AxiosTool } from '../../util/AxiosTool'
+import { AxiosTool } from '../../utils/AxiosTool'
 
 export default class AuthApi {
 
