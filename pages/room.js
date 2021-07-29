@@ -53,7 +53,7 @@ export default function Room() {
             <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
               <Col className="gutter-row" span={8}>
                 <div style={style}>
-                  <h1>Doctor:Vanessa White</h1> 
+                  <h1>Doctor: Vanessa White</h1> 
                 </div>
               </Col>
 
