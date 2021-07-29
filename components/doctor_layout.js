@@ -50,20 +50,20 @@ export default function MyLayout({ number, children }) {
             </Link>
           </Menu.Item>
           <Menu.Item key="4" icon={<LaptopOutlined />}>
-            <Link href="/forum">
+            <Link href="/doctor/forum">
               <a>Forum</a>
             </Link>
           </Menu.Item>
           
           <Menu.Item key="6" icon={<SettingOutlined />}>
-            <Link href="/settings">
+            <Link href="/doctor/settings">
               <a>Settings</a>
             </Link>
           </Menu.Item>
 
           <Menu.Item key="7" icon={<LogoutOutlined />}>
-            <Link href="/login">
-              <a>Sign Out</a>
+            <Link href="/doctor/login">
+              <a>Sign In</a>
             </Link>
           </Menu.Item>
         </Menu>

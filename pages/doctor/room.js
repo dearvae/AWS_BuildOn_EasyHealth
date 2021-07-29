@@ -32,7 +32,7 @@ export default function Room() {
 
     const handleLeave = () => {
       callFrame.destroy();
-      Router.push('/');
+      Router.push('/doctor/home');
     }
 
     const showModal = () => {

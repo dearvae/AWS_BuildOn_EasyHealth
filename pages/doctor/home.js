@@ -7,7 +7,7 @@ export default function Home() {
         Learn <a href="https://nextjs.org">Next.js!</a>
         </h1>
         <h2>
-            <Link href="/">
+            <Link href="/doctor/home">
             <a>Back to home</a>
             </Link>
         </h2>
