@@ -12,31 +12,55 @@ const data = [
       name: 'Meng Jiayu',
       field:'Skincare',
       hospital: "National Neuroscience Institute", 
+      image:"/doctoreg1.jpeg",
+      ratings: "4.9+",
+      experience: "7 years+",
+      price: "50"
     },
     {
       name: 'James Black',
-      field:'Cardiology',
-      hospital: "National Heart Centre Singapore", 
+      field:'Skincare',
+      hospital: "National Neuroscience Institute", 
+      image:"/doctoreg3.jpeg",
+      ratings: "4.4+",
+      experience: "6 years+",
+      price: "40"
     },
     {
       name: 'Jane Brown',
-      field:'Haematology',
-      hospital:'National Cancer Centre Singapore',
+      field:'Skincare',
+      hospital: "National Neuroscience Institute", 
+      image:"/doctoreg2.jpeg",
+      ratings: "4.8+",
+      experience: "6 years+",
+      price: "45"
     },
     {
-      name: 'Jeffery White',
+      name: 'Thomas Tan',
       field:'Cardiology',
       hospital: 'National Heart Centre Singapore',
+      image:"/doctoreg4.jpeg",
+      ratings: "4.3+",
+      experience: "9 years+",
+      price: "30"
     },
     {
-        name: 'Jeffery White',
+        name: 'Winson Ng',
         field:'Cardiology',
         hospital: 'National Heart Centre Singapore',
+        image:"/doctoreg5.jpeg",
+        ratings: "4.9+",
+        experience: "7 years+",
+        price: "90"
       },
       {
-        name: 'Jeffery White',
+        name: 'Mary Tan',
         field:'Cardiology',
         hospital: 'National Heart Centre Singapore',
+        image:"/doctoreg6.jpeg",
+        ratings: "4.6+",
+        experience: "9 years+",
+        price: "120"
       },
   ];
   
@@ -57,7 +81,7 @@ export default function DoctorList() {
                     <Col>
 
                         <Col>
-                            <Row><Image src="/JamesBlack.jpeg"></Image></Row>
+                            <Row><Image src={item.image} style={{height:"300px"}}></Image></Row>
                         </Col>
                
                         <Row><h1>Dr {item.name}</h1></Row>
@@ -66,10 +90,10 @@ export default function DoctorList() {
 
                         <Row>
                             <Col span={8}>
-                                <Avatar src="/ratings.png"></Avatar> <a style={{fontSize:"15px"}}>: 4.9+</a>
+                                <Avatar src="/ratings.png"></Avatar> <a style={{fontSize:"15px"}}>: {item.ratings}</a>
                             </Col> 
                             <Col span={8} style={{margin:"auto auto"}}>
-                            <Avatar src="/experience.png"></Avatar> <a style={{fontSize:"15px"}}>: 8 years+</a>
+                            <Avatar src="/experience.png"></Avatar> <a style={{fontSize:"15px"}}>: {item.experience}</a>
                             </Col>
                         </Row>
 
@@ -78,7 +102,7 @@ export default function DoctorList() {
                             <Avatar src="/availability.png"></Avatar> <a style={{fontSize:"15px"}}>: available</a>
                             </Col>
                             <Col span={8} style={{margin:"auto auto"}}>
-                            <Avatar src="/consultationfee.png"></Avatar> <a style={{fontSize:"15px"}}>: SGD 40</a> 
+                            <Avatar src="/consultationfee.png"></Avatar> <a style={{fontSize:"15px"}}>: SGD {item.price}</a> 
                             </Col>
                         </Row>
 
