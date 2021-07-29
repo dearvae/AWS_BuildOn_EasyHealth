@@ -9,7 +9,7 @@ import Avatar from 'antd/lib/avatar/avatar';
 
 const data = [
     {
-      name: 'Vanessa White',
+      name: 'Meng Jiayu',
       field:'Skincare',
       hospital: "National Neuroscience Institute", 
     },

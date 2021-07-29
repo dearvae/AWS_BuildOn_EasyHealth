@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Router from 'next/router'
 import React, { useState } from 'react';
-import MyLayout from '../components/layout'
+import MyLayout from '../../components/doctor_layout'
 import { Row, Col, PageHeader, Button, Select, Image, List, Card, Form, Input,Popover} from 'antd';
 import 'antd/dist/antd.css';
 import { StarOutlined, FormOutlined, TeamOutlined, UnlockOutlined, SafetyCertificateOutlined, FilePptOutlined, NotificationOutlined,
@@ -21,7 +21,7 @@ export default function Settings() {
                 <Col span={8}>
                     <Card title="Account" bordered={false} extra={<Popover content="Edit"><ContactsOutlined style={{ cursor: 'pointer'}} /></Popover>}>
                         <span>
-                            Li Beining <span style={{float: 'right'}}>1284293</span>
+                            Meng Jiayu <span style={{float: 'right'}}>023124</span>
                         </span>
                     </Card>
                 </Col>
@@ -79,7 +79,7 @@ export default function Settings() {
 
 
 Settings.getLayout = (Settings) => (
-        <MyLayout number="7">
+        <MyLayout>
           {Settings}
         </MyLayout>
       )

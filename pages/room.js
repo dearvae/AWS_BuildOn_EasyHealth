@@ -17,7 +17,7 @@ export default function Room() {
             showLeaveButton: false,
             iframeStyle: {
                 position: 'absolute',
-                top: '13%',
+                top: '15%',
                 left: '20%',
                 bottom: '10%',
                 right: '20%',
@@ -53,7 +53,7 @@ export default function Room() {
             <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
               <Col className="gutter-row" span={8}>
                 <div style={style}>
-                  <h1>Doctor: Vanessa White</h1> 
+                  <h1>Doctor: Meng Jiayu</h1> 
                 </div>
               </Col>
 
@@ -70,6 +70,18 @@ export default function Room() {
               </Col>
             </Row>
         </div>
+
+        <div>
+            <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+            <Col className="gutter-row" span={16}>
+                <div style={style}>
+                  <h1 style={style}>Currently working at : National Neuroscience Institute of Singapore</h1>
+                </div>
+              </Col>
+
+          </Row>
+        </div>
+
       </div>
     );
 }
