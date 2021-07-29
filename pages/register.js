@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Router from 'next/router'
+import AuthApi from "./api/AuthApi"
 import React, { useState } from 'react';
 import MyLayout from '../components/layout'
 import { Row, Col, notification, Button, Select, Image, List, Cascader, Form, Input, DatePicker} from 'antd';
@@ -156,8 +157,33 @@ const openNotificationWithIcon = type => {
 
 
 export default function Register() {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = async () => {
+    let message = ""
+
+    if (!message) {
+        const result = await AuthApi.authRegisterDoctor(name, email, password)
+        message = result.data.message
+    }
+    console.log(result)
+      openNotificationWithIcon('success')
+      //router.push("/")
+  }
     const [form] = Form.useForm();
 
+    const handleNameChange = (event) => {
+      setName(event.target.value); 
+    }
+    const handleEmailChange = (event) => {
+      setEmail(event.target.value); 
+    }
+    const handlePasswordChange = (event) => {
+      setPassword(event.target.value);
+    }
     const onFinish = (values) => {
       console.log('Received values of form: ', values);
     };
@@ -221,16 +247,8 @@ export default function Register() {
                       rules={[{required: true,
                               message: 'Please input your first name!',},
                           ]} >
-                      <Input />
+                      <Input name="name" onChange={handleNameChange} />
                   </Form.Item>
-                </Col>
-                <Col span={20}>
-                  <Form.Item 
-                        label="Middle Name"
-                        name="middlename"
-                        >
-                    <Input />
-                    </Form.Item>
                 </Col>
                 <Col span={20}>
                   <Form.Item 
@@ -320,7 +338,7 @@ export default function Register() {
                       },
                     ]}
                         >
-                <Input />
+                <Input name="email" onChange={handleEmailChange} />
                 </Form.Item>
                 </Col>
 
@@ -335,7 +353,7 @@ export default function Register() {
                         },
                         ]}
                     >
-                        <Input.Password />
+                        <Input.Password name="password" onChange={handlePasswordChange} />
                     </Form.Item>
                 </Col>
 
@@ -372,11 +390,11 @@ export default function Register() {
                     style={{marginTop:"5px", width:"200px", height:"40px",fontSize:"20px", 
                     boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                     borderColor:"#7dc98f",backgroundColor:"#7dc98f",color:"white"}}
-                    onClick={() => openNotificationWithIcon('success')}
+                    onClick={handleSubmit}
                     >
-                         <Link href="/login">
+          
                         <a>Submit</a>
-                        </Link>
+                  
                     </Button>
 
                     <Button 

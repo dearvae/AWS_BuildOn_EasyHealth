@@ -2,49 +2,33 @@ import { AxiosTool } from '../../utils/AxiosTool'
 
 export default class AuthApi {
 
-    static authLoginUserPath = "/auth/login/user"
-    static authLoginDoctorPath = "/auth/login/doctor"
-    static authRegisterUserPath = "/auth/register/user"
-    static authRegisterDoctorPath = "/auth/register/doctor"
+    static authLoginUserPath = "/login-patient"
+    static authLoginDoctorPath = "/login-doctor"
+    static authRegisterUserPath = "/create-patient"
+    static authRegisterDoctorPath = "/create-doctor"
 
-    static authLoginUser(phoneCountryCode, phoneNumber, password) {
-        return AxiosTool().post(AuthApi.authLoginUserPath, { phoneCountryCode, phoneNumber, password })
+    static authLoginUser(email, password) {
+        return AxiosTool().post(AuthApi.authLoginUserPath, { email, password  })
     }
 
-    static authLoginDoctor(phoneCountryCode, phoneNumber, password) {
-        return AxiosTool().post(AuthApi.authLoginDoctorPath, { phoneCountryCode, phoneNumber, password })
+    static authLoginDoctor(email, password) {
+        return AxiosTool().post(AuthApi.authLoginDoctorPath, { email, password })
     }
 
-    static authRegisterUser(lastName, firstName, gender, age, phoneCountryCode,
-        phoneNumber, ic, password, smsCode) {
-        return AxiosTool().post(AuthApi.authRegisterUserPath, {
-            lastName,
-            firstName,
-            gender,
-            age,
-            phoneCountryCode,
-            phoneNumber,
-            ic,
-            password,
-            smsCode
+    static authRegisterUser(name, email, password) {
+        console.log(name)
+        return AxiosTool().post(AuthApi.authRegisterDoctorPath, {
+            name,
+            email,
+            password
         })
     }
 
-    static authRegisterDoctor(lastName, firstName, gender, age, phoneCountryCode,
-        phoneNumber, ic, license, qualification, hospital, password, smsCode) {
+    static authRegisterDoctor(name, email, password) {
         return AxiosTool().post(AuthApi.authRegisterDoctorPath, {
-            lastName,
-            firstName,
-            gender,
-            age,
-            phoneCountryCode,
-            phoneNumber,
-            ic,
-            license,
-            qualification,
-            hospital,
-            password,
-            smsCode
+            name,
+            email,
+            password
         })
     }
 

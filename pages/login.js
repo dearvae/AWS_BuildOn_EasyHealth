@@ -114,12 +114,4 @@ export default function Login() {
       </div>
       </>
       )
-      }
-
-
-
-Login.getLayout = (Login) => (
-        <MyLayout number="3">
-          {Login}
-        </MyLayout>
-      )
+}
