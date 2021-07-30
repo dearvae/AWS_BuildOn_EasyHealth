@@ -166,10 +166,11 @@ export default function Register() {
     let message = ""
 
     if (!message) {
-        const result = await AuthApi.authRegisterDoctor(name, email, password)
+        const result = await AuthApi.authRegisterUser(name, email, password)
+        console.log(result)
         message = result.data.message
     }
-    console.log(result)
+
       openNotificationWithIcon('success')
       //router.push("/")
   }

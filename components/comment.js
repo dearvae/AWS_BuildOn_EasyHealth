@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Comment, Tooltip, Avatar } from 'antd';
 import { DislikeOutlined, LikeOutlined, DislikeFilled, LikeFilled } from '@ant-design/icons';
 
-export default function CommentBox() {
+export default function CommentBox(props) {
     const [likes, setLikes] = useState(0);
     const [dislikes, setDislikes] = useState(0);
     const [action, setAction] = useState(null);
@@ -21,7 +21,7 @@ export default function CommentBox() {
         setAction('disliked');
     };
 
-    const { text } = this.props;
+    const { text } = props;
     
     const actions = [
     <Tooltip key="comment-basic-like" title="Like">

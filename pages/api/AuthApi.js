@@ -17,7 +17,7 @@ export default class AuthApi {
 
     static authRegisterUser(name, email, password) {
         console.log(name)
-        return AxiosTool().post(AuthApi.authRegisterDoctorPath, {
+        return AxiosTool().post(AuthApi.authRegisterUserPath, {
             name,
             email,
             password

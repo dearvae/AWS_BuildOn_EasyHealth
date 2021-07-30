@@ -19,7 +19,7 @@ export default function Post() {
         title="Title"
         subTitle="3 health tips for 2020"
         />
-        <Card title="Card title">
+        <Card title="20 health tips for 2020">
         The start of a new decade brings with it new resolutions to improve one’s life, including a healthier lifestyle. Here are 20 practical health tips to help you start off towards healthy living in 2020.
         
         1. Eat a healthy diet
