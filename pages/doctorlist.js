@@ -35,33 +35,33 @@ const data = [
       experience: "6 years+",
       price: "45"
     },
-    {
-      name: 'Thomas Tan',
-      field:'Cardiology',
-      hospital: 'National Heart Centre Singapore',
-      image:"/doctoreg4.jpeg",
-      ratings: "4.3+",
-      experience: "9 years+",
-      price: "30"
-    },
-    {
-        name: 'Winson Ng',
-        field:'Cardiology',
-        hospital: 'National Heart Centre Singapore',
-        image:"/doctoreg5.jpeg",
-        ratings: "4.9+",
-        experience: "7 years+",
-        price: "90"
-      },
-      {
-        name: 'Mary Tan',
-        field:'Cardiology',
-        hospital: 'National Heart Centre Singapore',
-        image:"/doctoreg6.jpeg",
-        ratings: "4.6+",
-        experience: "9 years+",
-        price: "120"
-      },
+    // {
+    //   name: 'Thomas Tan',
+    //   field:'Cardiology',
+    //   hospital: 'National Heart Centre Singapore',
+    //   image:"/doctoreg4.jpeg",
+    //   ratings: "4.3+",
+    //   experience: "9 years+",
+    //   price: "30"
+    // },
+    // {
+    //     name: 'Winson Ng',
+    //     field:'Cardiology',
+    //     hospital: 'National Heart Centre Singapore',
+    //     image:"/doctoreg5.jpeg",
+    //     ratings: "4.9+",
+    //     experience: "7 years+",
+    //     price: "90"
+    //   },
+    //   {
+    //     name: 'Mary Tan',
+    //     field:'Cardiology',
+    //     hospital: 'National Heart Centre Singapore',
+    //     image:"/doctoreg6.jpeg",
+    //     ratings: "4.6+",
+    //     experience: "9 years+",
+    //     price: "120"
+    //   },
   ];
   
 

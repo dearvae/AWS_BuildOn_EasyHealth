@@ -49,7 +49,6 @@ export default function Insurance() {
 
     return (
         <>
-        <PageHeader className="site-page-header"/>
 
         <div>
         <h1 style={{textAlign:"center", fontSize:"30px"}}>Insurances</h1>
@@ -65,7 +64,7 @@ export default function Insurance() {
                         <img
                           alt="example"
                           src={item.image}
-                          style={{height:"240px"}}
+                          style={{height:"180px", margin:"auto auto"}}
                         />
                       }
                       actions={[
