@@ -63,7 +63,7 @@ export default function MyLayout({ number, children }) {
 
           <Menu.Item key="7" icon={<LogoutOutlined />}>
             <Link href="/doctor/login">
-              <a>Sign In</a>
+              <a>Log Out</a>
             </Link>
           </Menu.Item>
         </Menu>

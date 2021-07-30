@@ -403,8 +403,8 @@ export default function Register() {
 
 
 
-Register.getLayout = (Login) => (
-        <MyLayout number="3">
-          {Login}
-        </MyLayout>
-      )
+// Register.getLayout = (Login) => (
+//         <MyLayout number="3">
+//           {Login}
+//         </MyLayout>
+//       )

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Router from 'next/router'
 import AuthApi from "./api/AuthApi"
 import React, { useState } from 'react';
-import MyLayout from '../components/layout'
+// import MyLayout from '../components/layout'
 import { Row, Col, notification, Button, Select, Image, List, Cascader, Form, Input, DatePicker} from 'antd';
 import 'antd/dist/antd.css';
 import Avatar from 'antd/lib/avatar/avatar';
@@ -422,8 +422,8 @@ export default function Register() {
 
 
 
-Register.getLayout = (Login) => (
-        <MyLayout number="3">
-          {Login}
-        </MyLayout>
-      )
+// Register.getLayout = (Login) => (
+//         <MyLayout number="3">
+//           {Login}
+//         </MyLayout>
+//       )
