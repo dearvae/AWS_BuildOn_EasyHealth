@@ -3,10 +3,8 @@ import Link from 'next/link'
 import Router from 'next/router'
 import AuthApi from "./api/AuthApi"
 import React, { useState } from 'react';
-// import MyLayout from '../components/layout'
-import { Row, Col, notification, Button, Select, Image, List, Cascader, Form, Input, DatePicker} from 'antd';
+import { Row, Col, notification, Button, Select, Image, List, Cascader, Form, Input, DatePicker,PageHeader} from 'antd';
 import 'antd/dist/antd.css';
-import Avatar from 'antd/lib/avatar/avatar';
 
 const { Option } = Select;
 const residences = [
@@ -223,6 +221,7 @@ export default function Register() {
 
     return (
         <>
+             <PageHeader className="site-page-header"/>
             <div>
           <h1 style ={{textAlign:'center',margin:'0.2em', fontSize:"30px", marginBottom:"25px"}}>Registration</h1>
 
@@ -393,22 +392,11 @@ export default function Register() {
                     borderColor:"#7dc98f",backgroundColor:"#7dc98f",color:"white"}}
                     onClick={handleSubmit}
                     >
-          
+                      <Link href="/login">
                         <a>Submit</a>
-                  
+                      </Link>
                     </Button>
-{/* 
-                    <Button 
-                    htmlType="submit" 
-                    shape="round"
-                    style={{marginTop:"20px", width:"200px", height:"40px",fontSize:"20px", 
-                    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                    borderColor:"white",backgroundColor:"white",color:"red"}}
-                    >
-                         <Link href="/">
-                        <a>Cancel</a>
-                        </Link>
-                    </Button> */}
+
             
                 </Form.Item>
                 
@@ -419,11 +407,3 @@ export default function Register() {
         </>
       )
       }
-
-
-
-// Register.getLayout = (Login) => (
-//         <MyLayout number="3">
-//           {Login}
-//         </MyLayout>
-//       )

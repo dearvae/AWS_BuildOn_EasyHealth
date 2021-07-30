@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Router from 'next/router'
 import React, { useState } from 'react';
 import MyLayout from '../../components/doctor_layout'
-import { Row, Col, notification, Button, Select, Image, List, Cascader, Form, Input, DatePicker} from 'antd';
+import { Row, Col, notification, Button, Select, Image, List, Cascader, Form, Input, DatePicker,PageHeader} from 'antd';
 import 'antd/dist/antd.css';
 import Avatar from 'antd/lib/avatar/avatar';
 
@@ -196,6 +196,7 @@ export default function Register() {
 
     return (
         <>
+             <PageHeader className="site-page-header"/>
             <div>
           <h1 style ={{textAlign:'center',margin:'0.2em', fontSize:"30px", marginBottom:"25px"}}> Doctor Portal Registration</h1>
 
