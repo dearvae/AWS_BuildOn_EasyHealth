@@ -397,7 +397,7 @@ export default function Register() {
                         <a>Submit</a>
                   
                     </Button>
-
+{/* 
                     <Button 
                     htmlType="submit" 
                     shape="round"
@@ -408,7 +408,7 @@ export default function Register() {
                          <Link href="/">
                         <a>Cancel</a>
                         </Link>
-                    </Button>
+                    </Button> */}
             
                 </Form.Item>
                 
