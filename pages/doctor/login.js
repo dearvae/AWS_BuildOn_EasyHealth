@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Router from 'next/router'
 import React, { useState } from 'react';
-import MyLayout from '../../components/doctor_layout'
+// import MyLayout from '../../components/doctor_layout'
 import { Row, Col, PageHeader, Button, Select, Image, List, Card, Form, Input,Checkbox} from 'antd';
 import 'antd/dist/antd.css';
 import Avatar from 'antd/lib/avatar/avatar';
@@ -118,8 +118,8 @@ export default function Login() {
 
 
 
-Login.getLayout = (Login) => (
-        <MyLayout>
-          {Login}
-        </MyLayout>
-      )
+// Login.getLayout = (Login) => (
+//         <MyLayout>
+//           {Login}
+//         </MyLayout>
+//       )
