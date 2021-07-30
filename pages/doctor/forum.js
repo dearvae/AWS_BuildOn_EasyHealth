@@ -13,25 +13,25 @@ const data = [
     title: '20 health tips for 2020',
   },
   {
-    title: 'CS1101S is hard!!',
+    title: 'Are COVID-19 vaccine boosters the way forward?',
   },
   {
-    title: 'CS1101S is hard!!',
+    title: 'Medical Myths: All about hepatitis',
   },
   {
-    title: 'CS1101S is hard!!',
+    title: 'Omega-3 levels in the blood may boost lifespan',
   },
   {
-    title: 'CS1101S is hard!!',
+    title: 'Long COVID: Epstein-Barr virus may offer clues',
   },
   {
-    title: 'CS1101S is hard!!',
+    title: 'Hypertension: Which first-line medication is best?',
   },
   {
-    title: 'CS1101S is hard!!',
+    title: 'Can masturbating impact the immune system?',
   },
   {
-    title: 'CS1101S is hard!!',
+    title: '1 in 3 cancer articles on social media contain harmful misinformation',
   },
 ];
 
