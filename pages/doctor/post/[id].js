@@ -35,8 +35,7 @@ export default function Post() {
         The preferable unsaturated fats are found in fish, avocado and nuts, and in sunflower, soybean, canola and olive oils; saturated fats are found in fatty meat, butter, palm and coconut oil, cream, cheese, ghee and lard; and trans-fats are found in baked and fried foods, and pre-packaged snacks and foods, such as frozen pizza, cookies, biscuits, and cooking oils and spreads.   
         <CommentBox text="Avoid harmful use of alcohol" />   
         <CommentBox text="Don’t smoke"/>   
-        <CommentBox text="Be active"/>   
-        <CommentBox />  
+        <CommentBox text="Be active"/>    
         </Card>
         </>
     )

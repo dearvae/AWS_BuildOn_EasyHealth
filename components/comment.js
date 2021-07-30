@@ -21,6 +21,7 @@ export default function CommentBox() {
         setAction('disliked');
     };
 
+    const { text } = this.props;
     
     const actions = [
     <Tooltip key="comment-basic-like" title="Like">
@@ -41,7 +42,7 @@ export default function CommentBox() {
     return (
         <Comment
         actions={actions}
-        author={<a>Han Solo</a>}
+        author={<a>Zhu Zikun</a>}
         avatar={
             <Avatar
             src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
@@ -50,9 +51,7 @@ export default function CommentBox() {
         }
         content={
             <p>
-            We supply a series of design principles, practical patterns and high quality design
-            resources (Sketch and Axure), to help people create their product prototypes beautifully
-            and efficiently.
+            {text}
             </p>
         }
         datetime={

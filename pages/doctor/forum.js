@@ -10,7 +10,7 @@ import { PlusOutlined} from '@ant-design/icons';
 const { TextArea } = Input;
 const data = [
   {
-    title: 'CS1101S is hard!!',
+    title: '20 health tips for 2020',
   },
   {
     title: 'CS1101S is hard!!',

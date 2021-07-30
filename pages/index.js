@@ -6,13 +6,13 @@ import MyLayout from '../components/layout'
 import { Row, Col, PageHeader, Button, Select, Image } from 'antd';
 import 'antd/dist/antd.css';
 
-const { Option } = Select;
-import 'antd/dist/antd.css';
+
 import Amplify from "aws-amplify";
 import {AmplifyChatbot} from "@aws-amplify/ui-react";
 import awsconfig from "../src/aws-exports";
 import { fixControlledValue } from 'antd/lib/input/Input';
 
+const { Option } = Select;
 Amplify.configure(awsconfig);
 
 export default function Home() {
@@ -20,18 +20,17 @@ export default function Home() {
   const handleChatComplete = (event) => {
     const {data, err} = event.detail;
     if (data) console.log("Chat fulfilled!", JSON.stringify(data));
+    Router.push("/doctorlist")
     if (err) console.error("Chat failed:", err);
   };
   
   useEffect(() => {
     if(isChatVisible) {
+      console.log("sasa")
       const chatbotElement = document.querySelector("amplify-chatbot");
       chatbotElement.addEventListener("chatCompleted", handleChatComplete);
-      return function cleanup() {
-        chatbotElement.removeEventListener("chatCompleted", handleChatComplete);
-      };
     }
-  }, []);
+  });
 
   const [isChatVisible, setIsChatVisible] = useState(false);
 
