@@ -20,6 +20,7 @@ export default function Login() {
 
     return (
       <>
+           <PageHeader className="site-page-header"/>
         <div>
           <div style={{textAlign:"center"}}>
             <img style={{margin:'1em', height:'100px'}} src="/easyHealthLogo.png"/>
